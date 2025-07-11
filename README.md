@@ -32,7 +32,7 @@ The Law of Large Numbers (LLN) posits that as the number of observations increas
 
 ## Data-Driven Evaluation: A Superior Methodology
 
-All shots contribute valuable information. Discarding data, such as outliers, compromises accuracy and wastes resources. The objective is to compile a comprehensive database of shot impacts for statistical analysis. The tools outlined below, supported by a free resource at [LE Production Service](http://www.leproductionservice.com), facilitate this process. The website provides tools for calculating the metrics discussed and ensuring that the formulas are clearly presented and reliable.
+All shots contribute valuable information. Discarding data, such as outliers, compromises accuracy and wastes resources. The objective is to compile a comprehensive database of shot impacts for statistical analysis. The tools outlined below, supported by a free resource at [https://loathengine.github.io ](https://loathengine.github.io), facilitate this process. The website provides tools for calculating the metrics discussed and ensuring that the formulas are clearly presented and reliable.
 
 ***
 
@@ -117,34 +117,3 @@ While less dominant at short range, these factors are still relevant.
 * **Wind:** Even light breezes can push a bullet off course.
 * **Temperature:** Affects powder burn rates and air density.
 * **Humidity/Barometric Pressure:** Affects air density, which influences bullet drag.
-
-***
-
-## Significance of Reloading Components for .308 Winchester
-For a cartridge like the .308 Winchester, reloading allows for the optimization of ammunition consistency. The significance of each component is as follows:
-
-1.  **Powder (Propellant):** This is the most critical component. Consistent charge weights of a suitable powder (e.g., Hodgdon Varget, IMR 4064) are vital for uniform muzzle velocity, minimizing vertical dispersion.
-2.  **Bullet:** Bullet quality is crucial. Match-grade bullets like the Sierra MatchKing or Berger VLD provide consistency in weight and shape. Seating depth must also be consistent to manage pressure and barrel harmonics.
-3.  **Primer:** Match-grade primers (e.g., Federal GM210M, CCI BR-2) provide the consistent ignition needed for uniform pressure development.
-4.  **Brass (Case):** High-quality brass (e.g., Lapua, Norma) with uniform case capacity, length, and neck thickness is essential. Proper case preparation, including trimming and annealing, ensures consistency.
-5.  **Reloading Equipment and Process:** The precision of reloading dies, presses, and scales, combined with a meticulous process, ties all other components together to produce match-grade ammunition.
-
-***
-
-## Specialized Targets and Load Development
-
-### Ladder Targets
-Ladder targets are used in load development to identify the optimal powder charge for a specific rifle and bullet combination. The process involves loading cartridges with incrementally increasing powder charges (e.g., in 0.2-grain steps). These are then fired in sequence at a single target. The goal is to find a "node" or a range of charge weights that produce shots with minimal vertical dispersion, indicating that the load is less sensitive to minor variations in charge weight.
-
-### ARA Unlimited Class Target
-The American Rimfire Association (ARA) Unlimited class uses a specific target for its competitions. This target features 25 individual bullseyes, and it is relevant to precision analysis because it forces the shooter to fire single shots at multiple aim points, removing the psychological and statistical clustering effects of shooting multi-shot groups at a single bullseye. Analyzing performance on such a target can give a clear picture of a system's raw precision. These targets can be found for purchase from suppliers of competitive shooting equipment or downloaded from online resources.
-
-***
-
-## Summary of Methodology
--   **Objective:** Assess rifle system modifications with precision.
--   **Approach:** Record 20+ shots, compute Mean Radius, and eliminate subjectivity.
--   **Resource:** [LE Production Service](http://www.leproductionservice.com).
--   **Guidance:** Proficiency outweighs equipment. Prioritize fundamental skills.
-
-Adopt this methodology to achieve reliable, reproducible results in precision shooting analysis.
