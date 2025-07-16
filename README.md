@@ -31,15 +31,15 @@ The Law of Large Numbers (LLN) posits that as the number of observations increas
 ### Randomness in the Short Run:
 In the short term, random events can be unpredictable.
 
-###Convergence in the Long Run:
+### Convergence in the Long Run:
 As the number of coin flips increases, the proportion of heads will get closer and closer to 50%. This is the essence of the Law of Large Numbers. The average of the results will tend to stabilize around the expected value.
 
-### Examples:
+### Examples of LLN in the wild:
 **Casino Games:** Casinos rely on the Law of Large Numbers. While a player might win or lose a few spins of roulette, over thousands of spins, the casino is guaranteed to make a profit because the house edge will play out as expected. 
 **Insurance:** Insurance companies use the Law of Large Numbers to assess risk. By collecting premiums from a large pool of policyholders, they can reliably predict the number of claims they will have to pay out and adjust premiums accordingly. 
 **Research:** In scientific studies, researchers use large sample sizes to ensure that their results are representative of the population they are studying. Small sample sizes are more prone to random fluctuations and may not accurately reflect the true population average. 
 
-In precision shooting, larger shot counts provide a more accurate depiction of a rifle system’s performance.  An analogy of when it is natural to expect a large sample size would be if considering someone selling a coin that they claim will always land on heads.  The vendor then flips a coin three times, and all three flips the coin landed heads up. Its is intuitive to us that this outcome does not "prove" the coin will always land on heads.  We would seek a large sample size to prove the coin vendor's claims. To prove a coin will never land on tails, people might expect twenty, thirty, fifty, or even hundreds of coin flips to be performed to prove the claim.  The more data you have, the more likely your analysis is closer to the truth.
+In precision shooting, larger shot counts provide a more accurate depiction of a rifle system’s performance.  An analogy of when it is natural to expect a large sample size would be if considering someone selling a coin that they claim will always land on heads.  The vendor then flips a coin three times, and all three flips of the coin land heads up. It is intuitive to us that this outcome does not "prove" the coin will always land on heads.  We would seek a large sample size to prove the coin vendor's claims. To prove a coin will never land on tails, people might expect twenty, thirty, fifty, or even hundreds of coin flips to be performed to prove the claim.  The more data you have, the more likely your analysis is closer to the truth.
 
 ***
 
@@ -47,7 +47,7 @@ In precision shooting, larger shot counts provide a more accurate depiction of a
 
 All shots contribute valuable information. Discarding data, such as outliers (fliers), compromises data integrity. Record every shot you fire.
 
-The decision to exclude data points, especially outliers (fliers), from an analysis should not be taken lightly and must be carefully considered and justified. Removing data points can lead to biased or misleading conclusions, undermining the integrity of research or analysis. 
+The decision to exclude data points, especially outliers, from an analysis should not be taken lightly and must be carefully considered and justified. Removing data points can lead to biased or misleading conclusions, undermining the integrity of research or analysis. 
 
 **Bias and distorted results:** Removing shots that don't fit a desired outcome can skew results, creating a distorted picture of the data and leading to inaccurate conclusions.
 
@@ -59,23 +59,17 @@ The decision to exclude data points, especially outliers (fliers), from an analy
 
 ***
 
-## Terminology and Key Metrics
+## Terminology of Key Metrics
 
 | Term | Definition | Example in Shooting |
 | :--- | :--- | :--- |
-| **Standard Deviation** | Measure of variability in data points. | Consistency of shot placement (smaller is better). |
+| **Horizontal ES** | Extreme Spread on the horizontal plane |  Usefull for troubleshooting problems like windage correction |
+| **Vertical ES** | Extreme Spread on the vertical plane | Usefull for troupleshooting problems like volicity isssues |
+| **H/V Ratio** | Ration of horizontal vs virticle plane |  Closer to 1 the better |
 | **Mean Radius (MR)** | Average distance of each shot from the group’s center. | Indicator of the dispersion size (smaller is better) |
-| **H/V Dispersion Ratio**| A ratio of horizontal to vertical standard deviation.  | >1.0 is a wide group, <1.0 is a tall group. | Tall groups (less than 1) can indicate volicity issues.
-| **P95 (R95)** | The radius of a circle that contains 95% of the shots. | A P95 of 1.2 inches means 95% of shots will land within a 1.2-inch radius of the group's center. |
-
-
-Horizontal ES:
-Vertical ES:
-H/V Ratio:
-Mean Radius:
-Std. Deviation:
-MoE (95% CI):
-P95 Range:
+| **Standard Deviation** | Measure of variability in data points. | Consistency of shot placement (smaller is better). |
+| **MoE (95% CI)** | Margin of Error at a 95% Confidence Interval | The error rate expected based on the amount of data (more shots = less error) |
+| **P95 Range** | The radius of a circle that contains 95% of the shots with the MoE applied. | A P95 of 0.8 to 1.2 inches means 95% of shots will land within a 0.8 to 1.2-inch radius of the group's center. |
 
 ***
 
