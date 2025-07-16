@@ -100,6 +100,55 @@ Record each shot’s horizontal (X) and vertical (Y) distance from the point of 
 ### Sample Size Guidance
 A minimum of 20 shots is advised. Statistical reliability emerges around 20 shots, stabilizes by 30, and remains consistent beyond 50. Advanced tests, such as the Shapiro-Wilk method, assess data normality and are available on the referenced website, though optional. Based on experience, 20 shots suffice for practical purposes. All shots, including outliers, should be recorded.
 
+While there's no universally "magic" number for a minimum sample size, the idea that 20 (or sometimes 30) is a general minimum often comes from a combination of statistical principles and practical considerations:
+
+Central Limit Theorem (CLT) and Normality:
+
+The Central Limit Theorem is a cornerstone of statistics. It states that, for a sufficiently large sample size, the distribution of sample means will be approximately normal, regardless of the shape of the original population distribution.
+
+
+While the "sufficiently large" can vary, a common rule of thumb is that a sample size of 30 or more is often considered large enough for the CLT to apply reasonably well. This allows us to use parametric statistical tests (like t-tests or ANOVA) that assume normality, even if the underlying data isn't perfectly normal.
+
+For very skewed or unusual distributions, even 30 might not be enough, but for many practical applications, it provides a decent starting point. The number 20 falls just below this, but often still allows for a reasonable approximation, especially if the population distribution isn't extremely non-normal.
+
+Degrees of Freedom and Statistical Tests:
+
+Many statistical tests (like t-tests) rely on the concept of "degrees of freedom," which are related to the sample size. With very small sample sizes, the degrees of freedom are limited, which can make it difficult to achieve statistical significance, even if a real effect exists.
+
+For example, a t-test with very few degrees of freedom has a much wider confidence interval and requires a larger difference between means to be deemed statistically significant. As the sample size increases, the t-distribution approaches the normal distribution, making statistical inferences more robust.
+
+Detecting Variability and Outliers:
+
+With a very small sample, it's hard to get a sense of the true variability within the population. A few extreme data points (outliers) can disproportionately influence the results, leading to a misleading picture.
+
+A larger sample helps to "smooth out" these individual variations and provides a more stable estimate of the population's characteristics (mean, standard deviation, etc.).
+
+Practical Considerations and "Rule of Thumb":
+
+In many fields, "20" or "30" has become a commonly cited heuristic or rule of thumb. This isn't always based on rigorous statistical derivation for every scenario but rather a practical guideline that aims to avoid severely underpowered studies.
+
+Researchers often face constraints of time, money, and resources. While larger samples are generally better, there's a point of diminishing returns where the additional precision gained from a slightly larger sample doesn't justify the increased cost and effort. Twenty (or thirty) is often seen as a minimal point where some reasonable statistical analysis can begin to be performed.
+
+Important Caveats:
+
+No Universal Rule: It's crucial to understand that 20 is NOT a magic number that guarantees valid results in all situations. The truly appropriate sample size depends heavily on:
+
+The type of study and research question: Qualitative studies, for example, often use much smaller sample sizes (e.g., 5-10 participants for in-depth interviews).
+
+The variability of the population: If the population is very homogeneous (little variation), a smaller sample might suffice. If it's highly heterogeneous, you'll need a larger sample.
+
+The desired margin of error and confidence level: To achieve higher precision and confidence, you'll need a larger sample.
+
+The expected effect size: If you anticipate a small but important effect, you'll need a much larger sample to detect it statistically.
+
+The statistical analysis being used: More complex statistical models (e.g., multiple regression with many predictors, structural equation modeling) often require significantly larger sample sizes.
+
+Resources and feasibility: Practical constraints often dictate the maximum feasible sample size.
+
+Underpowered Studies: Relying solely on a small "minimum" like 20 without proper power analysis can lead to "underpowered" studies. These studies might fail to detect real effects, leading to false negative conclusions (Type II errors) and a waste of research effort.
+
+In conclusion, while 20 (or 30) serves as a rough guide, it's more accurate to say that it's a point below which statistical inferences become very unreliable and prone to significant error. Researchers should ideally perform a power analysis specific to their study design, research question, and desired effect size to determine the most appropriate sample size.
+
 ***
 
 ## Factors Affecting Accuracy in Short-Range Precision Shooting
