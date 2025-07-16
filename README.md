@@ -26,7 +26,7 @@ Then came the internet, and with it, as many forum posts and evaluation methods 
 
 ## Statistical Foundation: The Law of Large Numbers
 
-The Law of Large Numbers (LLN) posits that as the number of observations increases, the sample mean approaches the true population mean.  When applied to shooting every additional shot recorded gets your results closer to the truth.   In precision shooting, larger shot counts provide a more accurate depiction of a rifle system’s performance. Consider a coin flipped three times, all resulting in heads: this outcome does not "prove" the coin will always land on heads.   Similarly, a three-shot group does not definitively establish capability. Intuitively, people might require twenty, thirty, fifty, or even hundreds of coinflips to be convinced the a coin is in fact a heads only coin.  From some reason small shooting samples are often accepted without scrutiny. This might be because simple systems (like coin flips) are more intutivelly evaluated, while complex systems like rifles do not have a simple obvious way to prove out.  The more data you have the more likely your analysis is closer to the truth.
+The Law of Large Numbers (LLN) posits that as the number of observations increases, the sample mean approaches the true population mean.  When applied to shooting, every additional shot recorded gets your results closer to the truth.   In precision shooting, larger shot counts provide a more accurate depiction of a rifle system’s performance. Consider a coin flipped three times, all resulting in heads: this outcome does not "prove" the coin will always land on heads.   Similarly, a three-shot group does not definitively establish capability. Intuitively, people might require twenty, thirty, fifty, or even hundreds of coinflips to be convinced that a coin is in fact, a heads-only coin.  For some reason, small shooting samples are often accepted without scrutiny. This might be because simple systems (like coin flips) are more intuitively evaluated, while complex systems like rifles do not have an obvious way to prove out.  The more data you have, the more likely your analysis is closer to the truth.
 
 ***
 
@@ -58,7 +58,7 @@ P95 Range:
 
 ## Comparing Extreme Spread and Mean Radius
 
-**Extreme Spread (ES)** measures the distance between the two furthest shots, emphasizing the least favorable outcomes. Relying solely on small groups or excluding outliers introduces bias, which may benefit promotional efforts but undermines objective testing. Every recorded shot enhances the dataset’s integrity.
+**Extreme Spread (ES)** measures the distance between the two furthest shots, emphasizing the least favorable outcomes. Relying solely on small groups or excluding outliers introduces bias, which may benefit promotional efforts but undermine objective testing. Every recorded shot enhances the dataset’s integrity.
 
 ES remains useful for diagnosing significant malfunctions. For instance, a $7,000 rifle advertised as sub-0.5 MOA yielding a 6-inch ES after three shots suggests issues such as unsecured optics or defective ammunition, requiring no further testing to identify a problem.
 
