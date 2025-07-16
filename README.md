@@ -35,9 +35,11 @@ In the short term, random events can be unpredictable.
 As the number of coin flips increases, the proportion of heads will get closer and closer to 50%. This is the essence of the Law of Large Numbers. The average of the results will tend to stabilize around the expected value.
 
 ### Examples of LLN in the wild:
-**Casino Games:** Casinos rely on the Law of Large Numbers. While a player might win or lose a few spins of roulette, over thousands of spins, the casino is guaranteed to make a profit because the house edge will play out as expected. 
-**Insurance:** Insurance companies use the Law of Large Numbers to assess risk. By collecting premiums from a large pool of policyholders, they can reliably predict the number of claims they will have to pay out and adjust premiums accordingly. 
-**Research:** In scientific studies, researchers use large sample sizes to ensure that their results are representative of the population they are studying. Small sample sizes are more prone to random fluctuations and may not accurately reflect the true population average. 
+**Casino Games:** Casinos rely on the Law of Large Numbers. While a player might win or lose a few spins of roulette, over thousands of spins, the casino is guaranteed to make a profit because the house edge will play out as expected.
+
+**Insurance:** Insurance companies use the Law of Large Numbers to assess risk. By collecting premiums from a large pool of policyholders, they can reliably predict the number of claims they will have to pay out and adjust premiums accordingly.
+
+**Research:** In scientific studies, researchers use large sample sizes to ensure that their results are representative of the population they are studying. Small sample sizes are more prone to random fluctuations and may not accurately reflect the true population average.
 
 In precision shooting, larger shot counts provide a more accurate depiction of a rifle system’s performance.  An analogy of when it is natural to expect a large sample size would be if considering someone selling a coin that they claim will always land on heads.  The vendor then flips a coin three times, and all three flips of the coin land heads up. It is intuitive to us that this outcome does not "prove" the coin will always land on heads.  We would seek a large sample size to prove the coin vendor's claims. To prove a coin will never land on tails, people might expect twenty, thirty, fifty, or even hundreds of coin flips to be performed to prove the claim.  The more data you have, the more likely your analysis is closer to the truth.
 
