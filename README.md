@@ -29,10 +29,10 @@ Then came the internet, and with it, as many forum posts and evaluation methods 
 The Law of Large Numbers (LLN) posits that as the number of observations increases, the sample mean approaches the true mean. 
 
 ### Randomness in the Short Run:
-In the short term, random events can be unpredictable.
+In the short term, random events can be unpredictable.  A 3 MOA rifle that just happens to shoot a single hole three-shot group is an example of a random event in the short run.
 
 ### Convergence in the Long Run:
-As the number of coin flips increases, the proportion of heads will get closer and closer to 50%. This is the essence of the Law of Large Numbers. The average of the results will tend to stabilize around the expected value.
+As the number of coin flips increases, the proportion of heads will get closer and closer to 50%. This is the essence of the Law of Large Numbers. The average of the results will tend to stabilize around the expected value.  
 
 ### Examples of LLN in the wild:
 **Casino Games:** Casinos rely on the Law of Large Numbers. While a player might win or lose a few spins of roulette, over thousands of spins, the casino is guaranteed to make a profit because the house edge will play out as expected.
