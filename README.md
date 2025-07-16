@@ -20,36 +20,42 @@ Then came the internet, and with it, as many forum posts and evaluation methods 
 * **Limited sample sizes:** Assertions based on three-shot groups labeled as "sub-MOA."
 * **Selective reporting:** Exclusion of outliers to artificially improve results.
 * **Insufficient detail:** Absence of testing conditions, such as the number of groups previously shot.
-* **Overstated simplicity:** Claims that inexpensive tools can significantly enhance precision.  Chances are high that if something is cheap and easy rifle manufacturers would already be doing it.  
+* **Overstated simplicity:** Claims that inexpensive tools can significantly enhance precision.  Chances are high that if something is cheap and easy, rifle manufacturers would already be doing it.  
 
 ***
 
 ## Statistical Foundation: The Law of Large Numbers
 
-The Law of Large Numbers is a principle in probability that states that as the number of trials of a random process increases, the average of the outcomes will converge towards the expected value. In simpler terms, the more times you repeat an experiment, the closer the average result will get to the theoretical average. 
-Here's a more detailed explanation:
+The Law of Large Numbers (LLN) posits that as the number of observations increases, the sample mean approaches the true mean. 
 
-### Expected Value:
-Every random event has an expected value, which is the average outcome you would expect if the event were repeated infinitely many times. For example, a fair coin flip has an expected value of 0.5 (50% chance of heads). 
 ### Randomness in the Short Run:
-In the short term, random events can be unpredictable. Flipping a coin a few times might result in a sequence of mostly heads or mostly tails, even though the long-term probability is 50/50. 
+In the short term, random events can be unpredictable.
+
 ###Convergence in the Long Run:
-As the number of coin flips increases, the proportion of heads will get closer and closer to 50%. This is the essence of the Law of Large Numbers. The average of the results will tend to stabilize around the expected value. 
+As the number of coin flips increases, the proportion of heads will get closer and closer to 50%. This is the essence of the Law of Large Numbers. The average of the results will tend to stabilize around the expected value.
+
 ### Examples:
-Casino Games: Casinos rely on the Law of Large Numbers. While a player might win or lose a few spins of roulette, over thousands of spins, the casino is guaranteed to make a profit because the house edge will play out as expected. 
-Insurance: Insurance companies use the Law of Large Numbers to assess risk. By collecting premiums from a large pool of policyholders, they can reliably predict the number of claims they will have to pay out and adjust premiums accordingly. 
-Research: In scientific studies, researchers use large sample sizes to ensure that their results are representative of the population they are studying. Small sample sizes are more prone to random fluctuations and may not accurately reflect the true population average. 
-Law of Truly Large Numbers:
-There's also a related concept called the "Law of Truly Large Numbers," which suggests that with a large enough number of trials, even extremely unlikely events can eventually occur. For instance, while it's improbable to win the lottery, if you play for a very long time, the odds of winning at some point increase. 
+**Casino Games:** Casinos rely on the Law of Large Numbers. While a player might win or lose a few spins of roulette, over thousands of spins, the casino is guaranteed to make a profit because the house edge will play out as expected. 
+**Insurance:** Insurance companies use the Law of Large Numbers to assess risk. By collecting premiums from a large pool of policyholders, they can reliably predict the number of claims they will have to pay out and adjust premiums accordingly. 
+**Research:** In scientific studies, researchers use large sample sizes to ensure that their results are representative of the population they are studying. Small sample sizes are more prone to random fluctuations and may not accurately reflect the true population average. 
 
-
-The Law of Large Numbers (LLN) posits that as the number of observations increases, the sample mean approaches the true mean.  In precision shooting, larger shot counts provide a more accurate depiction of a rifle system’s performance.  An analogy of when it is natural to expect a large sample size would be if considering someone selling a coin that they claim will always land on heads.  The vendor then flips a coin three times, and all three flips the coin landed heads up. Its is intuitive to us that this outcome does not "prove" the coin will always land on heads.  We would seek a large sample size to prove the coin vender claims.  Similarly, a three-shot SUB-MOA group does not prove the rifle is SUB-MOA. To prove a coin will never land on tails, people might expect twenty, thirty, fifty, or even hundreds of coin flips to be performed to prove the claim.  The more data you have, the more likely your analysis is closer to the truth.
+In precision shooting, larger shot counts provide a more accurate depiction of a rifle system’s performance.  An analogy of when it is natural to expect a large sample size would be if considering someone selling a coin that they claim will always land on heads.  The vendor then flips a coin three times, and all three flips the coin landed heads up. Its is intuitive to us that this outcome does not "prove" the coin will always land on heads.  We would seek a large sample size to prove the coin vendor's claims. To prove a coin will never land on tails, people might expect twenty, thirty, fifty, or even hundreds of coin flips to be performed to prove the claim.  The more data you have, the more likely your analysis is closer to the truth.
 
 ***
 
 ## Data-Driven Methodology: Every shot is important.
 
-All shots contribute valuable information. Discarding data, such as outliers (fliers), compromises data integrity and wastes resources. Record every shot you fire.  Also make use of every data point.   
+All shots contribute valuable information. Discarding data, such as outliers (fliers), compromises data integrity. Record every shot you fire.
+
+The decision to exclude data points, especially outliers (fliers), from an analysis should not be taken lightly and must be carefully considered and justified. Removing data points can lead to biased or misleading conclusions, undermining the integrity of research or analysis. 
+
+**Bias and distorted results:** Removing shots that don't fit a desired outcome can skew results, creating a distorted picture of the data and leading to inaccurate conclusions.
+
+**Loss of valuable information:** Fliers or unusual shots might represent valuable information that could shed light on unexpected phenomena, errors in data collection, or even reveal new insights about the rifle system.
+
+**Reduced statistical power:** Removing data, especially outliers, can decrease the variability in the dataset, which in turn reduces statistical power and potentially impacts the ability to detect true effects or relationships.
+
+**Compromised transparency and reproducibility:** Failing to document the reasons for excluding data points compromises transparency and reproducibility, making it difficult for others to understand and replicate the analysis.  Examples of data to exclude would be something like sighter, warm up, and fouling shots.  But once you commit to printing shots... record the shots.  
 
 ***
 
@@ -73,7 +79,7 @@ P95 Range:
 
 ***
 
-## Comparing Extreme Spread and Mean Radius
+## Comparing Extreme Spread
 
 Extreme Spread (ES) measures the distance between the two furthest shots, analyzing only the two worst shots. Relying solely on small groups or excluding outliers introduces bias, which may benefit promotional efforts but undermine objective testing. Every recorded shot enhances the dataset’s integrity.
 
