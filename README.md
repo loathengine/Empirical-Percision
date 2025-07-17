@@ -6,7 +6,7 @@ This guide provides a systematic methodology for evaluating precision shooting p
 
 ## BLUF: Bottom Line Up Front
 
-Deep analysis is neither cheap nor easy.  Shooter proficiency is still the primary determinant of performance; equipment upgrades yield progressively smaller benefits. Mid-tier modern rifles often exhibit exemplary performance, and surpassing their capabilities requires significant discipline. No gadget can simplify precision shooting. Anyone telling you differently is trying to sell you something.  If the best someone can provide is a three or five shot group, they are not proving it works; they are proving that they don't intend to show you a large sample of it working.  
+Deep analysis is neither cheap nor easy.  Mid-tier modern rifles often exhibit exemplary performance, and surpassing their capabilities requires significant discipline.  There are no shortcuts, gadgets, lucky charms, or rituals to simplify precision shooting. Anyone telling you differently is trying to sell you something.  
 
 ***
 
