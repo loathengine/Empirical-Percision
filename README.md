@@ -22,8 +22,9 @@ Then came the internet, and with it, as many forum posts and evaluation methods 
 
 The Law of Large Numbers (LLN) posits that as the number of observations increases, the sample mean approaches the true mean. 
 
-**Randomness in the Short Run **  The small collections in a short-run are inherently uncertain.  Getting tails 3 times in a row doesn't mean you found a coin flip harmonic.  
-**Convergence in the Long Run:** Regardless of the initial conditions, all systems will eventually converge to the same long-run level.   
+**Randomness in the Short Run**  The small collections in a short-run are inherently uncertain.
+
+**Convergence in the Long Run:** Regardless of the initial conditions, all systems will eventually converge to the same long-run level.    
 
 **Examples of LLN in the wild:**
 
@@ -49,7 +50,31 @@ All shots contribute valuable information. Discarding data, such as outliers (fl
 
 ***
 
-## Terminology of Key Metrics
+## Establishing a Baseline
+A baseline represents the rifle system’s performance in a known state.  When you establish the baseline, you will always be able to reference that baseline to compare all future changes to the system.  
+
+### Cost Considerations
+Precision shooting entails significant expense, and this methodology increases initial costs.  However, this short term investment reduces long-term cost by producing concrete results that can be used for the life of the rifle system.  
+
+### Data Collection Protocol
+Conduct testing in a controlled environment to minimize variables. I utilize a rest on an ammunition shelf at an indoor facility.  For you, it might be shooting prone with sandbags.  Control for all the variables you can, and never change more than one variable at a time.
+
+Choose a target that is easy to read, and if possible, easy to take back home with you.  Analysis is easier at home on the coffee table than in the field.
+
+Position impacts away from your point of aim.  Its very possible to shoot out your POA, making it harder to maintain your POA.
+
+Record each shot’s horizontal (X) and vertical (Y) distance from the point of aim.  I often adjust the scope so impacts are above and to the right of the point of aim.  This is beneficial when recording data because, on a grid, up (Y) and right (X) can both be positive integers.  I will provide tools that handle negative points on a grid, but if you want to do it by hand, it's easier to keep all the math done in the real of "natural" numbers.  
+
+### Sample Size Guidance
+A minimum of twenty shots is advised. In most cases, statistical precision emerges around 30 shots and remains consistent beyond 50.  Based on experience, 20 shots should suffice for our initial purpose, especially compared to 3/5 shot groups. There's no universally "magic" number for a minimum number of shots.  As shooters, we face constraints of time, money, and resources. While larger samples are generally better, there's a point of diminishing returns where the additional precision gained from a larger sample doesn't justify the increased cost and effort. If you are arguing the validity of 30 shots vs 20 shots, then you don't need this guide.
+
+***
+
+## Okay... Now what
+
+Now we apply a bit of math to our data and see what comes out the other end.  All the math basically works with small amounts of data but to reiterate, small data sets only prove that your results can't be proven.   
+
+### Terminology of Key Metrics
 
 | Term | Definition | Example in Shooting |
 | :--- | :--- | :--- |
@@ -63,46 +88,15 @@ All shots contribute valuable information. Discarding data, such as outliers (fl
 
 ***
 
-## Comparing Extreme Spread
+## Comparing Extreme Spread (Group size)
 
-Extreme Spread (ES) measures the distance between the two furthest shots, analyzing only the two worst shots. Relying solely on small groups or excluding outliers introduces bias, which may benefit promotional efforts but undermine objective testing. Every recorded shot enhances the dataset’s integrity.
+Extreme Spread (ES) measures the distance between the two furthest shots, analyzing only the two worst shots.  This is a less useful form of analysis.  If you are printing 3-shot groups, there is no other data to derive from the group.  If you are printing 20-shot groups, there are significantly more tools that make use of EVERY shot.
 
-ES remains useful for diagnosing significant malfunctions. For instance, a $7,000 rifle advertised as sub-0.5 MOA yielding a 6-inch ES after three shots suggests issues such as unsecured optics or defective ammunition, requiring no further testing to identify a problem.
+ES remains useful for diagnosing significant malfunctions. For instance, a $7,000 rifle advertised as sub-0.5 MOA yielding a 6-inch ES after three shots suggests issues such as unsecured optics or defective ammunition, requiring no further testing to identify a problem.  It should be understood that if the group is "bad" there is no reason to continue testing unless you just want to prove how bad the group is.  Example case might be where you print a 6 in group at 100 yards.  The single variable you change is scope rings.  You return to test, and the first 3 shots are 5 inches.  No point wasting shots, three shots is enough to prove that changing the scope rings didn't turn it from a 6moa system to a .5moa system.  
 
-**Mean Radius (MR)** offers a more thorough assessment by averaging the distance of each shot from the group’s center, rather than focusing on extremes. For example, a 3-shot group with a 0.98-inch ES compared to a 10-shot group with the same ES intuitively differs in quality; MR quantifies this distinction. However, small samples (e.g., 3 or 10 shots) limit the applicability of the Law of Large Numbers. A minimum of 20 shots is recommended for dependable results.
+**Mean Radius (MR)** (MR) calculation involves determining the group center, measuring each shot’s distance using the formula $\sqrt{((x_2 - x_1)^2 + (y_2 - y_1)^2)}$, and computing the average. Dont panic, modern technology simplifies this process.  MR offers a more thorough assessment by averaging the distance of each shot from the group’s center, rather than focusing on the two most extreme shots.  When using ES you might be tempted to exclude a "flier" because you realize that one data point is VERY significant to the results.  In using MR any "fleir" is much less significant becuse MR uses averaging... and that's the point.  
 
-MR calculation involves determining the group center, measuring each shot’s distance using the formula $\sqrt{((x_2 - x_1)^2 + (y_2 - y_1)^2)}$, and computing the average. Modern technology simplifies this process.
 
-***
-
-## Establishing a Baseline
-
-### Cost Considerations
-Precision shooting entails significant expense, and this methodology increases initial costs. A 20-shot baseline may require $20 to $50 in ammunition, depending on caliber. However, this investment reduces long-term inefficiencies by minimizing reliance on untested modifications.
-
-### Data Collection Protocol
-A baseline represents the rifle system’s performance before alterations. Conduct testing in a controlled environment, such as an indoor range with a bench rest, to minimize variables. I utilize a rest on an ammunition shelf at an indoor facility, acknowledging its limitations. Control measurable factors (e.g., wind, shooter position) and document uncontrollable variables (e.g., humidity, barrel temperature).
-
-Record each shot’s horizontal (X) and vertical (Y) distance from the point of aim. Positioning impacts above and to the right of the point of aim eliminates negative values. Shots are fired, targets preserved, and measurements taken later using calipers. Limit shots per target to maintain clarity.
-
-### Sample Size Guidance
-A minimum of twinty shots is advised. Statistical precision emerges around 30 shots and remains consistent beyond 50.  Based on experience, 20 shots suffice for our purpose, especially compared to 3/5 shot groups. There's no universally "magic" number for a minimum number of shots.
-
-With a very small sample, it's hard to get a sense of the true variability within the population. A few extreme data points (outliers) can disproportionately influence the results, leading to a misleading picture.  An outlier could be a 3 shot group through the same hole.  While always possible, it might be improbable to repeat often.
-
-A larger sample helps to "smooth out" these individual variations and provides a more stable estimate of the population's characteristics (mean, standard deviation, etc.).
-
-Practical Considerations
-
-As shooters, we face constraints of time, money, and resources. While larger samples are generally better, there's a point of diminishing returns where the additional precision gained from a slightly larger sample doesn't justify the increased cost and effort. Twenty (or thirty) is often seen as a minimal point where some reasonable statistical analysis can begin to be performed.
-
-Important Caveats:
-
-The variability of the population: If the population is very homogeneous (little variation), a smaller sample might suffice. If it's highly heterogeneous, you'll need a larger sample.
-
-The expected effect size: If you anticipate a small but important effect, you'll need a much larger sample to detect it statistically.
-
-Underpowered Studies: Relying solely on a small "minimum" like 20 without proper power analysis can lead to "underpowered" studies. These studies might fail to detect real effects, leading to false negative conclusions (Type II errors) and a waste of research effort.  In other words, its better to shoot 20 and be sure than to shoot 10 and not have a statistical conclusion.
 
 ***
 
