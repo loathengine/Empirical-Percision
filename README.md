@@ -22,18 +22,16 @@ Then came the internet, and with it, as many forum posts and evaluation methods 
 
 The Law of Large Numbers (LLN) posits that as the number of observations increases, the sample mean approaches the true mean. 
 
-#### Randomness in the Short Run:
-The small collections in a short-run are inherently uncertain.  Getting tails 3 times in a row doesn't mean you found a coin flip harmonic.  
-#### Convergence in the Long Run:
-Regardless of the initial conditions, all systems will eventually converge to the same long-run level.   
+** Randomness in the Short Run: **  The small collections in a short-run are inherently uncertain.  Getting tails 3 times in a row doesn't mean you found a coin flip harmonic.  
+** Convergence in the Long Run: ** Regardless of the initial conditions, all systems will eventually converge to the same long-run level.   
 
-#### Examples of LLN in the wild:
+** Examples of LLN in the wild: **
 
-**Casino Games:** Casinos rely on the Law of Large Numbers. While a player might win or lose a few spins of roulette, over thousands of spins, the casino is guaranteed to make a profit because the house edge will play out as expected.
+Casino Games: Casinos rely on the Law of Large Numbers. While a player might win or lose a few spins of roulette, over thousands of spins, the casino is guaranteed to make a profit because the house edge will play out as expected.
 
-**Insurance:** Insurance companies use the Law of Large Numbers to assess risk. By collecting premiums from a large pool of policyholders, they can reliably predict the number of claims they will have to pay out and adjust premiums accordingly.
+Insurance: Insurance companies use the Law of Large Numbers to assess risk. By collecting premiums from a large pool of policyholders, they can reliably predict the number of claims they will have to pay out and adjust premiums accordingly.
 
-**Medical:** In medical studies, researchers are expected to use large sample sizes to ensure that their observations are representative of the entire population. The fluctuation in small samples can not be expected to accurately reflect the truth.
+Medical: In medical studies, researchers are expected to use large sample sizes to ensure that their observations are representative of the entire population. The fluctuation in small samples can not be expected to accurately reflect the truth.
 
 ***
 
