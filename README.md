@@ -1,26 +1,20 @@
-# Empirical Precision: A Rational Approach to Shooting Analysis
+# Empirical Precision: A No-Nonsense Approach to Shooting Analysis
 
-This guide provides a systematic methodology for evaluating precision shooting performance. It is intended to assess a rifle system through objective, repeatable techniques.
+This guide provides a structured methodology for evaluating precision shooting performance. It is intended to assess a rifle system through objective, repeatable techniques.
 
 ***
 
 ## BLUF: Bottom Line Up Front
 
-Deep analysis is neither cheap nor easy.  Mid-tier modern rifles often exhibit exemplary performance, and surpassing their capabilities requires significant discipline.  There are no shortcuts, gadgets, lucky charms, or rituals to simplify precision shooting. Anyone telling you differently is trying to sell you something.  
+Real analysis is neither cheap nor easy.  Mid-tier modern rifles can often exhibit exemplary performance, and surpassing those capabilities requires significant discipline.  There are no shortcuts, gadgets, lucky charms, or rituals to simplify precision shooting. Anyone telling you differently is trying to sell you something.  
 
 ***
 
 ## Historical Context: Transitioning from Anecdotal to Statistical Evaluation
 
-My first experience with a scoped rifle was sighting in using three-shot groups. Under my father’s direction, I fired three rounds, adjusted the scope, and repeated until it was "dead nuts on".  Leaving the range with over half of the single box of .30-06 Core-Lokt that was brought. That box likely lasted at least two more seasons. This approach proved sufficient for me at the time. I was indoctrinated. For years, I relied on three- or five-shot groups to assess rifle systems because it is simplistic, cost-effective, and adequate...  and it just worked.
+My first experience with a scoped rifle was sighting in using three-shot groups. Under my father’s direction, I fired three rounds, adjusted the scope, and repeated until it was "dead nuts on".  Leaving the range with over half of the single box of .30-06 Core-Lokt that was brought. That box likely lasted at least two more seasons. This approach proved sufficient for me at the time. I was indoctrinated. For years, I relied on three- or five-shot groups to assess rifle systems because it was simplistic, cost-effective, and... it just worked.
 
-Then came the internet, and with it, as many forum posts and evaluation methods as fathers and sons needed to sight in a rifle. Each was endorsed by its proponents. But something wasn't adding up. How can so many different methods, claiming to be the best, still end up with the same results? If every method were best, how could any be the best? I believe that with so many methods in competition to be the "right" method, a new paradigm has formed.  This paradigm was that a small group SUB-MOA was above reproach. Companies were less interested in figuring out if small MOAs were the best way to evaluate a rifle system and more interested in getting a picture of a three-shot group with a small MOA to post on a shooting forum. It's unclear if the MOA was pushed by the snake oil salesmen or if they just adopted it, but either way they jumped on the bandwagon and started selling their sub moa wares.  Shortly after, youtube was also filled with videos demonstrating sub MOA three shot groups as proof of the product.
-
-**Indicators of Unreliable Information:**
-* **Limited sample sizes:** Assertions based on three-shot groups labeled as "sub-MOA."
-* **Selective reporting:** Exclusion of outliers to artificially improve results.
-* **Insufficient detail:** Absence of testing conditions, such as the number of groups previously shot.
-* **Overstated simplicity:** Claims that inexpensive tools can significantly enhance precision.  Chances are high that if something is cheap and easy, rifle manufacturers would already be doing it.  
+Then came the internet, and with it, as many forum posts and evaluation methods as fathers and sons needing to sight in a rifle.  But something wasn't adding up. How can so many different methods still end up with the same results? If every technique did the job, how could any technique not do the job?  I believe that with so many methods in competition to be the "right" method, it lead to a paradigm shift.  This paradigm was to take advantage of many low standard test we used in our youth that "just worked".   But what worked to sight in a 40 year old rifle with hardware store hunting ammo should not be the same test used to prove if a 0.2 grain change in powder charge moves the system into an advantageous waveform harmonic.  Extraordinary claims require extraordinary evidence.
 
 ***
 
@@ -29,35 +23,31 @@ Then came the internet, and with it, as many forum posts and evaluation methods 
 The Law of Large Numbers (LLN) posits that as the number of observations increases, the sample mean approaches the true mean. 
 
 ### Randomness in the Short Run:
-In the short term, random events can be unpredictable.  A 3 MOA rifle that just happens to shoot a single hole three-shot group is an example of a random event in the short run.
-
+The small collections in a short-run are inherently uncertain.  Getting tails 3 times in a row doesn't mean you found a coin flip harmonic.  
 ### Convergence in the Long Run:
-As the number of coin flips increases, the proportion of heads will get closer and closer to 50%. This is the essence of the Law of Large Numbers. The average of the results will tend to stabilize around the expected value.  
+Regardless of the initial conditions, all systems will eventually converge to the same long-run level.   
 
 ### Examples of LLN in the wild:
+
 **Casino Games:** Casinos rely on the Law of Large Numbers. While a player might win or lose a few spins of roulette, over thousands of spins, the casino is guaranteed to make a profit because the house edge will play out as expected.
 
 **Insurance:** Insurance companies use the Law of Large Numbers to assess risk. By collecting premiums from a large pool of policyholders, they can reliably predict the number of claims they will have to pay out and adjust premiums accordingly.
 
-**Research:** In scientific studies, researchers use large sample sizes to ensure that their results are representative of the population being studied. Small sample sizes are more prone to random fluctuations and may not accurately reflect the true population average.
-
-In precision shooting, larger shot counts provide a more accurate depiction of a rifle system’s performance.  An analogy of when it is natural to expect a large sample size would be if considering someone selling a coin that they claim will always land on heads.  The vendor then flips a coin three times, and all three flips of the coin land heads up. It is intuitive to us that this outcome does not "prove" the coin will always land on heads.  We would seek a large sample size to prove the coin vendor's claims. To prove a coin will never land on tails, people might expect twenty, thirty, fifty, or even hundreds of coin flips to be performed to prove the claim.  The more data you have, the more likely your analysis is closer to the truth.
+**Medical:** In medical studies, researchers are expected to use large sample sizes to ensure that their observations are representative of the entire population. The fluctuation in small samples can not be expected to accurately reflect the truth.
 
 ***
 
 ## Data-Driven Methodology: Every shot is important.
 
-All shots contribute valuable information. Discarding data, such as outliers (fliers), compromises data integrity. Record every shot you fire.
+All shots contribute valuable information. Discarding data, such as outliers (fliers), compromises data integrity. Record every shot you fire.  The decision to exclude data points from the analysis should not be taken lightly and must be carefully considered and justified. Removing data points can lead to biased or misleading conclusions, undermining the integrity of research or analysis. 
 
-The decision to exclude data points, especially outliers, from an analysis should not be taken lightly and must be carefully considered and justified. Removing data points can lead to biased or misleading conclusions, undermining the integrity of research or analysis. 
+**Bias and distorted results:** Removing shots that don't fit a desired outcome can skew results, creating a distorted picture of the data and leading to inaccurate conclusions.  
 
-**Bias and distorted results:** Removing shots that don't fit a desired outcome can skew results, creating a distorted picture of the data and leading to inaccurate conclusions.
+**Loss of valuable information:** Fliers or unusual shots might represent valuable information that could shed light on unexpected phenomena, errors in data collection, or even reveal insights about the rifle system.
 
-**Loss of valuable information:** Fliers or unusual shots might represent valuable information that could shed light on unexpected phenomena, errors in data collection, or even reveal new insights about the rifle system.
+**Reduced statistical power:** Removing data can decrease the variability in the dataset, which in turn reduces statistical power and potentially impacts the ability to detect true effects or relationships.
 
-**Reduced statistical power:** Removing data, especially outliers, can decrease the variability in the dataset, which in turn reduces statistical power and potentially impacts the ability to detect true effects or relationships.
-
-**Compromised transparency and reproducibility:** Failing to document the reasons for excluding data points compromises transparency and reproducibility, making it difficult for others to understand and replicate the analysis.  Examples of data to exclude would be something like sighter, warm up, and fouling shots.  But once you commit to printing shots... record the shots.  
+**Compromised transparency and reproducibility:** "Rationalizing" reasons for excluding data points compromises transparency and reproducibility, making it difficult to understand and/or replicate the analysis.  Examples of data to exclude would be something like sighter, warm up, and fouling shots.  But once you commit to printing shots... record the shots.    
 
 ***
 
