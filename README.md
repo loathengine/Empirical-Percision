@@ -29,7 +29,7 @@ To execute any modern evaluation, you must understand the exact definitions of t
 | **Extreme Spread (ES)** | The distance between the centers of the two furthest shots in a group. | Used primarily to diagnose massive hardware failures early on; otherwise discarded as a metric for group sizes because it ignores the majority of the data. |
 | **Mean Point of Impact (MPI)** | The calculated geometric center of a dataset of shots, derived from the average of all X and Y coordinates. | The dynamic center point from which all radial distances are measured. |
 | **Mean Radius (MR)** | The average distance of all shots from the Mean Point of Impact. | The primary statistical indicator of dispersion size (smaller is better) and the core variable used for evaluations. |
-| **Velocity SD ($SD_{MV}$)** | The Standard Deviation of muzzle velocities within a batch. | The critical indicator of internal ballistic consistency for long-range performance. |
+| **Velocity SD ($SD_{MV}$)** | The Standard Deviation of muzzle velocities within a batch. | An indicator of internal ballistic consistency: one input to vertical dispersion at long range, never a substitute for measuring the dispersion itself. |
 | **Sample Size (n)** | The cumulative total number of recorded shots for a specific recipe. | Dictates the statistical power of the evaluation framework (e.g., the Welch's t-test). |
 | **Confidence Interval (CI)** | A mathematical range representing the margin of error around your calculated average (e.g., a 95% CI). | Proves whether two recipes are actually different, or if their performance margins simply overlap due to statistical noise. |
 | **p-value** | The statistical probability that a competing recipe is equal to or better than the current leader. | The strict mathematical trigger for elimination. A value below 0.05 proves inferiority and permanently eliminates a recipe. |
@@ -98,10 +98,10 @@ ES remains useful for diagnosing significant malfunctions. For instance, a $7,00
 
 ## Internal Ballistics: The Velocity Factor
 
-While Mean Radius measures external dispersion (where the bullet physically lands), it does not tell the whole story. At 1,000 yards, a load with a tiny Mean Radius at 100 yards will fall apart completely if the muzzle velocity is erratic. You must integrate chronograph statistics into your analysis.
+While Mean Radius measures external dispersion (where the bullet physically lands), a 100-yard Mean Radius does not tell the whole story. At 1,000 yards, a load with a tiny Mean Radius at 100 yards will fall apart if the muzzle velocity is erratic. Chronograph statistics belong in the analysis. They are an input to dispersion, not a substitute for it, and the target has the final word (see *Velocity Is a Means, Not the Target* below).
 
-* **Velocity Standard Deviation ($SD_{MV}$):** This is arguably as critical as Mean Radius for long-range shooters. An $SD_{MV}$ of under 10 feet per second (fps) is the gold standard for long-range precision. If your velocity SD is 25 fps, your vertical dispersion at extended ranges will be disastrous, regardless of how tight your 100-yard paper groups are.
-* **Velocity Extreme Spread ($ES_{MV}$):** While Extreme Spread is a poor metric for group size on paper, it is a *vital* metric for muzzle velocity. A single significantly slow round will drop below the target plate at 1,200 yards.
+* **Velocity Standard Deviation ($SD_{MV}$):** It matters at long range. An $SD_{MV}$ under 10 feet per second (fps) is the long-range standard. At 1,000 yards a 6.5 Creedmoor match bullet strikes about 0.3 inches lower for every fps it is slow, so an SD of 10 fps is 3 inches of vertical at one standard deviation and an SD of 25 fps is nearly 8. That is disastrous at that distance. But it is one input among several, it is measured with noise, and at 100 or 300 yards it is almost none of the vertical you see.
+* **Velocity Extreme Spread ($ES_{MV}$):** ES is a weak number for velocity too. It grows with the number of shots, it rests on the two most extreme readings, and those readings carry the chronograph's own error. Use it the way this guide uses group ES: to catch a gross failure early. A single slow round will drop below the plate at 1,200 yards if it really was slow, and the target at that distance will say whether it was.
 
 ---
 
@@ -120,7 +120,7 @@ For example, if you are halfway through testing a batch of ammunition and you in
 Because establishing statistical significance requires shooting multiple blocks of ammunition over time, you must be acutely aware of external factors that can skew your data between range trips. You are evaluating the load components, not the weather, but the weather *will* affect the components.
 
 **1. Temperature (The Undisputed King of Session-to-Session Variance)**
-* **Internal Ballistics:** Critical. If you develop a load during a hot July session and then take that same ammo on a freezing November hunt, you will likely see a massive drop in muzzle velocity (sometimes 30 to 50+ fps). Conversely, ammo left sitting in a hot car or chambered in a hot gun between strings of fire can spike pressures to dangerous levels. Temperature stability of your powder is the single biggest internal variable between sessions.
+* **Internal Ballistics:** Critical. If you develop a load during a hot July session and then take that same ammo on a freezing November hunt, you will likely see a massive drop in muzzle velocity. In Hodgdon's test of its temperature-stable Extreme powders against fifteen others, the others moved 26 to 166 fps between 0°F and 125°F and the Extreme powders 4 to 20 fps (the numbers are in *Load Development* below). Conversely, ammo left sitting in a hot car or chambered in a hot gun between strings of fire can spike pressures to dangerous levels. Temperature stability of your powder is the single biggest internal variable between sessions.
 * **External Ballistics:** Critical. Temperature swings radically change air density from month to month. Your bullet will strike significantly lower in dense, cold winter air compared to thin, hot summer air, meaning your 500-yard DOPE (Data On Previous Engagements) from August will be completely wrong in December.
 
 **2. Elevation / Station Pressure (The Baseline Shifter)**
@@ -133,6 +133,142 @@ Because establishing statistical significance requires shooting multiple blocks 
 
 **4. Wind**
 * **External Ballistics:** Moderate (Contextually). Wind is still the hardest thing to read while you are shooting, but it ranks lowest for session-to-session variance because it is not a baseline shift. You don't have to change your rifle's zero or rewrite your drop charts between sessions just because it was windy last Tuesday. You simply hold for the wind you have in that exact moment.
+
+---
+
+## Load Development: What Survives the Evidence
+
+Load development is where most of the superstition in this hobby lives. Every method has a following, and every one of them "just works" for the people who use it. This guide asks every method the question it asks of a 3-shot group: does it hold up when the sample gets large?
+
+The evidence below is ranked. First come controlled tests with large samples: Bryan Litz and Applied Ballistics (*Modern Advancements in Long Range Shooting*, vols. I–III) and Hornady's ballistics lab. Then come government ballistics research (the Army Research Laboratory and its predecessor, the Ballistic Research Laboratory) and arithmetic anyone can check. Forum consensus comes last, and nothing here rests on it. Where a number was computed rather than quoted, it says so.
+
+### Nodes, Ladders and "Flat Spots"
+
+The Audette ladder, the Satterlee 10-shot velocity ladder and Optimal Charge Weight (OCW) all hunt for a *node*: a band of charge weights where velocity or point of impact stops changing, so that small charge errors stop mattering. The methods do not even agree on what a node is. Satterlee reads the chronograph. Audette and OCW read the target.
+
+* **Litz repeated the ladder.** Applied Ballistics ran the same ladder test more than once (vol. III): *"A single pass of a ladder test will always show one or more relative flat spots, however those are not in the same place each time the test is repeated."*
+* **Hornady's lab found the same thing from the other end.** Nodes that appeared in small samples disappeared as the samples grew. Their guidance is to judge a load on 20 to 30 shots, not 3 to 5.
+* **Chance alone makes flat spots.** Simulate a rifle whose velocity rises in a perfectly straight line with charge (60 fps per grain, 0.2 gr steps, 12 fps a step) and give it a true SD of 8 to 10 fps. A 10-shot Satterlee ladder shows three consecutive shots within 10 fps of each other in **39% to 44%** of runs (computed, 200,000 ladders per SD). That rifle has no node. It has noise.
+
+**The verdict:** a flat spot in a one-shot-per-step ladder is noise until a large sample says otherwise. Choose a charge for its velocity and its pressure margin, then prove it with the sample sizes below.
+
+### Optimal Barrel Time and Barrel Harmonics
+
+Barrel motion is real, and it moves shots: the Army Research Laboratory measured a stiff barrel cutting both muzzle motion and the dispersion it causes, against a standard M4 (Celmins, ARL-TR-5540, 2011). What has no controlled support is the narrower claim that a load groups because its bullet leaves at one of a few "optimal" barrel times (Chris Long's OBT). The predicted good times sit only 0.08 to 0.13 ms apart, against barrel times of 1.0 to 1.5 ms, so every load ever fired sits within about 5% of one of them. A theory that fits every load predicts none.
+
+### Velocity SD: What It Buys You
+
+This table turns SD into what you see on target. It was computed with this app's trajectory engine: 100-yard zero, standard sea-level air, the zero held while the velocity varies, as it does shot to shot.
+
+| Load | Vertical per fps at 400 / 600 / 1,000 yd | A 10 fps SD at 400 / 1,000 yd (1 SD) |
+| :--- | :--- | :--- |
+| 6.5 Creedmoor, 140 gr ELD-M at 2,700 fps | 0.034 / 0.086 / 0.31 in | 0.34 / 3.1 in |
+| .308 Win, 175 gr SMK at 2,650 fps | 0.039 / 0.100 / 0.40 in | 0.39 / 4.0 in |
+
+Precision Rifle Blog measured 0.28 inches per fps for a 6.5 Creedmoor match load at 1,000 yards, in agreement.
+
+* **At long range SD matters, and it is not alone.** Litz: *"A MV SD of 10 fps has a comparable effect on vertical dispersion as 1.0 percent SD in BC."* Premium match bullets run 0.4% to 0.6% BC SD, typical bullets 0.8% to 1.2%. Below about 5 fps of velocity SD, the bullets add as much vertical as the powder.
+* **At practical ranges, wind swamps it.** In Litz's *Maximum Effective Range* paper, a 10 fps velocity error moved a 300-yard shot 0.16 inches. A 2 mph error in the wind call moved the same shot 2.51 inches.
+
+### Velocity SD: What It Costs to Know
+
+A standard deviation from a handful of shots is a guess with a wide margin. The true SD lies between these multiples of the one you measured, 95% of the time (the chi-square interval; NIST *e-Handbook of Statistical Methods* §1.3.5.8):
+
+| Shots | True SD lies between |
+| :--- | :--- |
+| 5 | 0.60× and 2.87× the measured SD |
+| 10 | 0.69× and 1.83× |
+| 20 | 0.76× and 1.46× |
+| 30 | 0.80× and 1.34× |
+| 50 | 0.84× and 1.25× |
+
+A 5-shot SD of 9 fps is consistent with a true SD anywhere from 5.4 to 26 fps.
+
+Comparing two loads is harder. To tell two SDs apart with an F test (5% significance, detected 80% of the time), you need about **20 shots per load** when one SD is twice the other, about **55** when they differ by 2:3 (10 fps against 15), and about **100** when they differ by 3:4 (computed). Most claims that a primer or a brass change "cut my SD" rest on ten shots.
+
+Extreme spread is worse, because it grows with the number of shots. The expected ES of normally distributed velocities is 1.69 SD at 3 shots, 2.33 at 5, 3.08 at 10, 3.73 at 20 and 4.09 at 30 (computed; the distribution of extreme spread is worked out in Taylor & Grubbs, BRL-MR-2438, 1975). An ES from five shots and an ES from twenty cannot be compared at all.
+
+### Velocity Is a Means, Not the Target
+
+The goal is hits, which means total dispersion at the distance you shoot (see *WEZ* below). Velocity SD is one input to it. It is measured with noise, it is not the only source of vertical, and at most distances it is not the largest. Chasing a lower SD at the expense of a smaller group is a bad trade.
+
+* **The chronograph's own error is inside every SD it reports.** Garmin specifies its Xero C1 Pro radar at ±0.1% of velocity for rifles, which is ±2.8 fps at 2,800 fps. Garmin does not say whether that is a limit or one standard deviation. Either way it adds root-sum-square: if it is one standard deviation, a measured 5 fps SD is about 4.1 fps of ammunition, and a measured 4 fps is 2.9. Below about 5 fps, the instrument is a large part of the number.
+* **Velocity is not the only thing that moves a shot up and down.** The rifle's mechanical precision, the bullets' own BC variation (Litz: 1% of BC SD acts like 10 fps of velocity SD), the shooter, and how the muzzle happens to be moving at the instant the bullet leaves all put vertical on the target. None of them shows on a chronograph. A shot's recorded velocity and its height on the target are never perfectly correlated, and at short range they are barely correlated at all.
+* **At short range velocity is invisible.** For the 6.5 Creedmoor load above, each fps moves the shot 0.002 inches at 100 yards, 0.008 at 200 and 0.018 at 300 (computed). A 30 fps extreme spread moves a 100-yard shot 0.05 inches. Vertical stringing at 100 yards is not velocity.
+* **Chasing SD can cost you dispersion.** Take two loads in the same 6.5 Creedmoor. Load A has a 4 fps SD and groups 1.0 MOA. Load B has a 9 fps SD and groups 0.4 MOA (5-shot groups at 100 yards, whose extreme spread averages 3.09 standard deviations). Their total vertical, at one standard deviation (computed):
+
+| Distance | Load A: SD 4 fps, 1.0 MOA | Load B: SD 9 fps, 0.4 MOA | Velocity's share of B's vertical |
+| :--- | :--- | :--- | :--- |
+| 100 yd | 0.34 in | 0.14 in | 1% |
+| 300 yd | 1.02 in | 0.44 in | 14% |
+| 600 yd | 2.06 in | 1.12 in | 47% |
+| 1,000 yd | 3.60 in | 3.06 in | 80% |
+
+Load B, with more than twice the SD, has the smaller vertical at every distance to 1,000 yards. Its horizontal is smaller too, because velocity adds almost nothing sideways. A load is not better because its SD is lower. It is better when it puts more shots on the target at your distance.
+
+### Finding a Velocity Problem on Paper
+
+If velocity is costing you hits, the target will show it. Shoot at a distance where velocity matters, 600 yards or farther. Record each shot's velocity beside its impact (this app pairs chronograph readings with marked shots, and its Analysis page runs the checks below as *Velocity vs Height*). Then check three things:
+
+1. **Low shots should be slow shots.** A shot's expected height is its velocity's difference from the mean times the vertical per fps: 0.086 inches at 600 yards and 0.31 at 1,000 for the load above. If velocity drives your vertical, the observed heights follow the predicted ones.
+2. **Test the correlation, with enough shots.** With 20 shots, the correlation between velocity and height has to exceed about 0.45 before it means anything at the 5% level. With 30 shots it has to exceed 0.36 (computed). When velocity is half the vertical, as for Load B at 600 yards, the expected correlation is about 0.7 and it shows. When velocity is 3% of the vertical, as for Load A, the expected correlation is about 0.17 and it never will.
+3. **If the paper does not show it, velocity is not your problem.** A lower SD will not shrink a group whose vertical comes from somewhere else. Work on what the target shows.
+
+### Case Fill
+
+The common rule is to choose the powder that fills the case at maximum pressure. There is a mechanism behind it: in a partly empty case, where the powder lies changes the result. A Naval Postgraduate School study found forward ignition in .30-06 and 7.62 NATO cut pressure by up to 6,300 psi and added 35 fps at the same charge (Culver & Burns, 1972).
+
+But Applied Ballistics tested five cartridges, from .223 Remington to .338 Lapua, at 80%, 90% and 100% fill, and found no systematic SD advantage at 100%: *"The highest MV SD was in fact measured in an 80% fill ratio load. However, the lowest MV SD was also measured for a different 80% load!"*
+
+**The verdict:** a full case is a sound default, because it usually means a burn rate matched to the case. It does not guarantee a low SD, and it is not a reason to pass over a powder that tests better.
+
+### Temperature
+
+Hodgdon's own test fired each load at 0°F, 70°F and 125°F. It is a maker's test of its own product, so read it with that in mind. The independent test below also finds Varget and H4350 moving well under 1 fps per °F. A few rows:
+
+| Load | Powder | Velocity spread across the three temperatures |
+| :--- | :--- | :--- |
+| 30-06, 165 gr | H4350 | 4 fps |
+| | IMR 4350 | 67 fps |
+| .308 Win, 168 gr SMK | Varget | 8 fps |
+| | Winchester 748 | 114 fps |
+| .300 Win Mag, 180 gr | H4831SC | 10 fps |
+| | IMR 4831 | 127 fps |
+
+* Precision Rifle Blog soaked ammunition for 8 hours at each temperature and fired 10 shots at each: Varget in 6 Dasher moved 0.136 fps per °F and H4350 in 6 Creedmoor 0.140 fps per °F between 5°F and about 105°F.
+* The Ballistic Research Laboratory fitted military ball and IMR propellants from −65°F to 160°F: velocity changes by about 0.04% per °F, or about 1.1 fps per °F at 2,800 fps (Wagoner, BRL-MR-3825, 1990).
+* **What it costs:** a 40 fps shift, a 40°F swing with a 1 fps/°F powder, moves a 6.5 Creedmoor 140 gr bullet 1.4 inches at 400 yards and 12 inches at 1,000 (computed as above). That is four times the vertical of a 10 fps SD.
+* A load worked up to maximum on a cold day is over maximum on a hot one.
+
+### Pressure Signs
+
+Denton Bramwell fired 28 rounds, from 35,000 to 65,000 psi, against a strain gauge and measured the usual signs on every case (instrumented, not peer-reviewed). Pressure-ring expansion explained only 42.6% of the measured pressure, and a single ring diameter was consistent with anything from 44,000 to 73,000 psi. The one-shot error of each method:
+
+| Method | One-shot error (1 SD) |
+| :--- | :--- |
+| Case-head expansion | 7,500 psi |
+| Pressure-ring expansion | 6,800 psi |
+| Copper crusher | 1,827 psi |
+| Piezo transducer | 1,366 psi |
+| Strain gauge | 667 psi |
+
+Published data and a pressure trace can find a maximum. Brass cannot.
+
+### Components: What Measurably Matters
+
+* **Neck tension.** Litz took neck tension from .001 to .003 inches: SD fell from 9 to 6 fps in .223 and from 13 to 7 fps in .243, and the .308, already at 7 fps, did not change. Heavier tension was never worse.
+* **Powder lot.** Four lots of Varget in the same .223 loads: the three faster lots ran 23 to 46 fps faster than the slowest with a 69 gr bullet, and 8 to 15 fps with a 53 gr bullet (Courtney & Courtney, arXiv:1501.07163). Check velocity again on every new lot, even of a powder sold as lot-consistent.
+* **Your scale.** Independent errors add root-sum-square; the Army Research Laboratory builds its velocity error budgets that way (Strohm, ARL-TR-6494, 2013). At 52 fps per grain, a 0.05 gr scale error adds 2.6 fps: it lifts a 12 fps load to 12.3 and a 5 fps load to 5.6. A 0.10 gr error lifts the 5 fps load to 7.2 (computed). A better scale shows only when everything else is already good.
+* **Brass capacity.** Fifty cases from one lot varied 0.26% in capacity (1 SD) after one firing and 0.14% after four, and case weight did not predict capacity (Ammolytics, 6.5 Creedmoor). Sort by water capacity or fire-form, not by weight.
+* **Primers.** The primer alone drives the bullet into the rifling before the powder has burned (Ritter & Beyer, ARL-TR-7479, 2015). A primer is part of the charge. Test it as one.
+* **Seating depth.** One .223 rifle fired 400 rounds over ten charges and six seating depths: charge mattered, charge and depth together mattered, and depth alone did not (Anderson, Boneh & Grevstad, arXiv:0905.0727). One rifle proves nothing general. Test depth in yours with the same sample-size rules as anything else.
+* **Annealing, full brass prep, bullet sorting.** No controlled test was found either way. Treat each as a hypothesis to test, not a step to take on faith.
+
+### For Hunters
+
+* **The bullet sets the range, not the energy.** A hunting bullet needs a minimum impact velocity to open, and the makers publish it: Nosler AccuBond 1,800 fps, AccuBond Long Range 1,300; Berger's hunting bullets 1,800; Hornady CX 2,000; Swift A-Frame 1,650. A 6.5 Creedmoor 143 gr ELD-X leaving at 2,650 fps falls to 1,800 fps at about 630 yards, and 100 fps less at the muzzle brings that in by about 70 yards (computed).
+* **SD barely matters inside 400 yards. Temperature does.** A 10 fps SD adds about a third of an inch of vertical at 400 yards. A summer zero and a 40°F-colder morning can move the same bullet an inch and a half with an ordinary powder.
+* **Energy floors are a rule of thumb.** Figures like 1,000 ft-lb for deer come from Townsend Whelen's experience, not a measurement; what kills is a bullet that opens and reaches the vitals. Some are law, though (Colorado requires 1,000 ft-lb at 100 yards for deer and elk), so know yours.
 
 ---
 
